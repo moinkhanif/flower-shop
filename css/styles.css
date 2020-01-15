@@ -6,6 +6,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px red solid; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
 }
 
 body {
@@ -13,13 +23,14 @@ body {
   background-size: cover;
   background-repeat: repeat-y;
   background-position: bottom;
-  height: 100vh;
+  /* height: 100vh; */
+  padding: 0 10px;
 }
-
+/* 
 body > * {
   max-width: 1310px;
   margin: auto;
-}
+} */
 
 .logo {
   display: flex;
@@ -31,6 +42,14 @@ body > * {
   flex-basis: 1;
 }
 
+.logo h1 {
+  font-size: 1.1rem;
+}
+
+.main-li {
+  display: none;
+}
+
 header > div {
   display: flex;
   justify-content: space-between;
@@ -38,7 +57,121 @@ header > div {
   margin: 40px 0;
 }
 
+header ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
 header ul li {
   display: inline-block;
   list-style: none;
 }
+
+header ul  a {
+  /* padding: 2px 20px; */
+}
+
+.cart-icon {
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+}
+
+header .icon-li {
+  margin: 0 5px;
+}
+
+header .icon-li a {
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+}
+header ul .heart-li a {
+  background-color: rgba(255, 255, 255, 0.384);
+}
+
+
+header .icon-li:last-child a {
+  background-color: rgb(216,5,90);
+}
+
+header .icon-li:last-child a::after {
+  content: attr(data-cart);
+  position: absolute;
+  left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #999;
+}
+
+.top-cover
+
+/* 
+.top-cover {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80%;
+}
+
+.top-cover > div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.top-cover img {
+  width: 100%; */
+  /* transform: rotate(-15deg); */
+/* } */
+
+/* .top-cover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0%;
+  bottom: -10%;
+  background-image: url('../img/headerimg.png') ;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 120%;
+  height: 120%;
+  /* transform: rotate(-15deg); */
+/* } */ 
+
+/* .top-cover div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20%;
+  height: 100%;
+} */
+/* 
+.top-cover h2 {
+  color: #fff;
+  font-size: 3rem;
+  /* max-width: 50%; */
+/* }
+
+.top-cover > div > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.top-cover button {
+  background-color: rgb(216,5,90);
+  outline: none;
+  border: 1px solid #555;
+  padding: 20px 40px;
+} */
+ 
