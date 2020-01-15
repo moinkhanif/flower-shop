@@ -9,6 +9,14 @@
   /* border: 1px red solid; */
 }
 
+
+body {
+  background: radial-gradient(circle at  105% 10%, #72C92A 40%, transparent 40% ,transparent 90%),#62C312;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: bottom;
+}
+
 h1,
 h2,
 h3,
@@ -16,21 +24,20 @@ h4,
 h5,
 h6 {
   color: #fff;
+  font-family: 'Playfair Display', serif;
 }
 
-body {
-  background: radial-gradient(circle at  75% 20%, #72C92A 40%, transparent 40% ,transparent 90%),#62C312;
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-position: bottom;
-  /* height: 100vh; */
-  padding: 0 10px;
+p,
+span {
+  color: rgba(255, 255, 255, 0.815);
+  font-family: 'Hind Vadodara', sans-serif;
 }
-/* 
+
 body > * {
   max-width: 1310px;
   margin: auto;
-} */
+  padding: 0 10px;
+}
 
 .logo {
   display: flex;
@@ -110,8 +117,6 @@ header .icon-li:last-child a::after {
   color: #999;
 }
 
-.top-cover
-
 /* 
 .top-cover {
   position: relative;
@@ -167,11 +172,83 @@ header .icon-li:last-child a::after {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+*/
 
-.top-cover button {
-  background-color: rgb(216,5,90);
+.top-cover > div > * {
+  text-align: center;
+}
+
+.top-cover-text h2 {
+  margin: 60px 0 30px;
+}
+
+.cover-button,
+.footer-subscribe {
   outline: none;
   border: 1px solid #555;
-  padding: 20px 40px;
-} */
- 
+  margin: auto;
+  display: block;
+  color: #fff;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
+
+.cover-button {
+  background-color: rgb(216,5,90);
+  padding: 10px 20px;
+  margin-top: 40px;
+}
+
+.footer-subscribe {
+  padding: 10px 20%;
+  background-color: #55BF00;
+}
+
+.cover-img img {
+  width: 100%;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 50vh;
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+footer {
+  background-color: #fff;
+  max-width: 100%;
+  color: #555;
+  padding: 10px 5px;
+}
+
+footer p,
+footer span {
+  color: #555;
+}
+
+footer > div {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 20px 5px;
+  color: #555;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #555;
+  padding: 10px;
+  display: block;
+}
