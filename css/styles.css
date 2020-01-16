@@ -43,6 +43,10 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   display: flex;
   align-items: center;
