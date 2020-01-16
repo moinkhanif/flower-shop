@@ -39,6 +39,10 @@ body > * {
   padding: 0 10px;
 }
 
+img {
+  width: 100%;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -72,10 +76,6 @@ header ul a {
 header ul li {
   display: inline-block;
   list-style: none;
-}
-
-header ul  a {
-  /* padding: 2px 20px; */
 }
 
 .cart-icon {
@@ -212,6 +212,7 @@ header .icon-li:last-child a::after {
   position: relative;
   padding-bottom: 50vh;
   height: 0;
+  max-width: 100%;
   overflow: hidden;
 }
 .google-maps iframe {
@@ -251,4 +252,73 @@ footer a {
   color: #555;
   padding: 10px;
   display: block;
+}
+
+.best-offers {
+  /* background-color: #fff;
+  color: #555; */
+  padding: 30px;
+}
+
+.best-offers-top,
+.best-product-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.best-offers-top {
+  margin-bottom: 20px;
+}
+
+.best-offers-top h2 {
+  color: #555;
+  font-weight: bold;
+}
+
+.section-white {
+  background-color: #fff;
+}
+
+.section-white h1,
+.section-white h2,
+.section-white h3,
+.section-white h4 {
+  color: #555;
+}
+
+.section-white p,
+.section-white span {
+  color: #777;
+}
+
+.best-offers-top span {
+  color: #999;
+  margin-left: 20px;
+}
+
+.best-product-top {
+  margin: 20px auto;
+}
+
+.best-product-top span {
+  background-color: #62C312;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 41px;
+  padding: 7px;
+}
+
+.best-product {
+  background-color: rgb(252,252,252);
+  padding: 10px;
+}
+
+.best-offers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
 }
