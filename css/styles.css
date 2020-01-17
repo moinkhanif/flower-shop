@@ -213,10 +213,6 @@ footer > div {
   transition: opacity 0.2s;
 }
 
-.slider:hover {
-  opacity: 1;
-}
-
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -231,6 +227,10 @@ footer > div {
   height: 25px;
   background: #4caf50;
   cursor: pointer;
+}
+
+.slider:hover {
+  opacity: 1;
 }
 
 .color-selector .purple {
