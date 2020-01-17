@@ -552,3 +552,9 @@ footer a {
     margin-top: 30px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .top-cover-text h2 {
+    font-size: 3rem;
+  }
+}
