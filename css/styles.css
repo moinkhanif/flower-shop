@@ -1,5 +1,3 @@
-/* main color: #62C312 */
-/* secondary color #72C92A */
 *,
 *::after,
 *::before {
@@ -32,23 +30,19 @@ span {
 }
 
 body > main > *,
+header {
+  padding: 0 10px;
+}
+
+body > main > *,
 header,
 .w-100 > * {
   max-width: 1310px;
   margin: auto;
 }
 
-body > main > *,
-header{
-  padding: 0 10px;
-}
-
 .w-100 {
   max-width: 100%;
-}
-
- {
-
 }
 
 img {
@@ -61,6 +55,18 @@ a {
 
 li {
   list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #555;
+  padding: 10px;
+  display: block;
+}
+
+header ul a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .logo > a {
@@ -88,9 +94,8 @@ header > div {
   margin: 40px 0;
 }
 
-header ul a {
-  color: #fff;
-  text-decoration: none;
+footer li {
+  list-style: none;
 }
 
 header ul li {
@@ -167,6 +172,14 @@ header .icon-li:last-child a::after {
   padding: 10px;
 }
 
+footer > div {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 20px 5px;
+  color: #555;
+}
+
 .filters > div {
   display: none;
 }
@@ -196,8 +209,8 @@ header .icon-li:last-child a::after {
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
 .slider:hover {
@@ -209,14 +222,14 @@ header .icon-li:last-child a::after {
   appearance: none;
   width: 25px;
   height: 25px;
-  background: #4CAF50;
+  background: #4caf50;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: #4CAF50;
+  background: #4caf50;
   cursor: pointer;
 }
 
@@ -234,6 +247,11 @@ header .icon-li:last-child a::after {
 
 .color-selector .red {
   background-color: tomato;
+}
+
+footer p,
+footer span {
+  color: #555;
 }
 
 .top-cover > div > * {
@@ -297,30 +315,6 @@ footer {
   padding: 10px 5px;
 }
 
-footer p,
-footer span {
-  color: #555;
-}
-
-footer > div {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  margin: 20px 5px;
-  color: #555;
-}
-
-footer li {
-  list-style: none;
-}
-
-footer a {
-  text-decoration: none;
-  color: #555;
-  padding: 10px;
-  display: block;
-}
-
 .new-section {
   padding: 30px;
 }
@@ -333,11 +327,17 @@ footer a {
 
 .flower-product-details {
   padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .flower-product-title {
   display: flex;
   justify-content: space-between;
+}
+
+.product-options {
+  margin: 10px auto;
 }
 
 .flower-product-details .product-options {
@@ -350,17 +350,30 @@ footer a {
   align-items: center;
 }
 
+.see-more {
+  display: block;
+  padding: 10px 15px;
+  background-color: rgb(216, 5, 90);
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+}
+
 .flower-product-price .see-more {
   margin-left: 20px;
 }
 
-.flower-product-details .color-selector li {
-  padding: 20px;
+.product-options li {
+  margin-right: 20px;
+  padding: 2px 10px;
+  background-color: #fdfdfd;
+  border-radius: 50px;
 }
 
-.flower-product-details {
-  display: flex;
-  flex-flow: column wrap;
+.flower-product-details .color-selector li {
+  padding: 20px;
 }
 
 .best-offers-top,
@@ -500,20 +513,9 @@ footer a {
   align-items: center;
 }
 
-.product-options li {
-  margin-right: 20px;
-  padding: 2px 10px;
-  background-color: #fdfdfd;
-  border-radius: 50px;
-}
-
 .product-options .selected {
   border: 1px solid rgb(156, 219, 74);
   background-color: #fff;
-}
-
-.product-options {
-  margin: 10px auto;
 }
 
 .available-flowers .secondary {
@@ -526,18 +528,6 @@ footer a {
 
 .price::after {
   content: '';
-
-}
-
-.see-more {
-  display: block;
-  padding: 10px 15px;
-  background-color: rgb(216, 5, 90);
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  color: #fff;
-  border-radius: 50px;
 }
 
 .customer-details {
@@ -648,6 +638,14 @@ footer a {
     display: block;
   }
 
+  .footer-bottom > div {
+    margin: auto;
+  }
+
+  .footer-bottom > div:last-child {
+    margin-top: 30px;
+  }
+
   .best-product > a > div:last-child {
     width: 60%;
     height: 100%;
@@ -698,14 +696,6 @@ footer a {
     align-items: center;
   }
 
-  .footer-bottom > div {
-    margin: auto;
-  }
-
-  .footer-bottom > div:last-child {
-    margin-top: 30px;
-  }
-
   .flower-product {
     grid-template-columns: 1fr 1fr;
   }
@@ -715,31 +705,29 @@ footer a {
   .catalog-grid {
     grid-template-columns: 1fr 5fr;
   }
+
   .filters h3 {
     border: none;
   }
+
   .filters > div {
     display: block;
+  }
+
+  .slidecontainer > div {
+    display: flex;
   }
 
   .filters > div > div {
     margin: 20px auto;
   }
 
-
-
   .filters label {
     display: block;
   }
 
-  
-
   .slidecontainer > p {
     margin-bottom: 20px;
-  }
-
-  .slidecontainer > div {
-    display: flex;
   }
 
   .slidecontainer > div input {
