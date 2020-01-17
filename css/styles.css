@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px red solid; */
 }
 
 body {
@@ -32,10 +31,24 @@ span {
   font-family: 'Hind Vadodara', sans-serif;
 }
 
-body > * {
+body > main > *,
+header,
+.w-100 > * {
   max-width: 1310px;
   margin: auto;
+}
+
+body > main > *,
+header{
   padding: 0 10px;
+}
+
+.w-100 {
+  max-width: 100%;
+}
+
+ {
+
 }
 
 img {
@@ -128,6 +141,36 @@ header .icon-li:last-child a::after {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.filters {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 10px;
+}
+
+.filters > div {
+  display: none;
+}
+
+.filters h3 {
+  border: 1px solid rgb(156, 219, 74);
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 10px 1px;
+  border-radius: 10px;
+}
+
+.filter-img {
+  width: 20px;
+  height: 20px;
 }
 
 .top-cover > div > * {
@@ -324,6 +367,31 @@ footer a {
   display: none;
 }
 
+.available-flower {
+  position: relative;
+}
+
+.available-flower[data-available='yes']::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  height: 20px;
+  width: 20px;
+  background-image: url('../img/heart\ \(1\).svg');
+}
+
+.available-flower[data-available='no']::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  height: 20px;
+  width: 20px;
+  background-image: url('../img/heart.svg');
+  fill: red;
+}
+
 .product-options ul {
   display: flex;
   justify-content: start;
@@ -348,6 +416,15 @@ footer a {
 
 .available-flowers .secondary {
   display: none;
+}
+
+.price {
+  position: relative;
+}
+
+.price::after {
+  content: '';
+
 }
 
 .see-more {
@@ -496,33 +573,8 @@ footer a {
     display: block;
   }
 
-  .available-flower {
-    position: relative;
-  }
-
-  .available-flower[data-available='yes']::after {
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    height: 20px;
-    width: 20px;
-    background-image: url('../img/heart\ \(1\).svg') ;
-  }
-
-  .available-flower[data-available='no']::after {
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    height: 20px;
-    width: 20px;
-    background-image: url('../img/heart.svg') ;
-    fill: red;
-  }
-
   .work-gallery-grid {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .gallery-img-two,
@@ -532,7 +584,7 @@ footer a {
 
   .testimonials {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 50px;
   }
@@ -550,6 +602,15 @@ footer a {
 
   .footer-bottom > div:last-child {
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 877px) {
+  .catalog-grid {
+    grid-template-columns: 1fr 5fr;
+  }
+  .filters h3 {
+    border: none;
   }
 }
 
