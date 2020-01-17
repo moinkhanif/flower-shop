@@ -50,7 +50,7 @@ li {
   list-style: none;
 }
 
-.logo {
+.logo > a {
   display: flex;
   align-items: center;
 }
@@ -138,6 +138,10 @@ header .icon-li:last-child a::after {
   margin: 60px 0 30px;
 }
 
+.top-cover-text p {
+  margin-bottom: 30px;
+}
+
 .cover-button,
 .footer-subscribe {
   outline: none;
@@ -218,7 +222,8 @@ footer a {
 .best-offers-top,
 .best-product-top,
 .work-gallery-top,
-.client-gallery-top {
+.client-gallery-top,
+.available-flowers-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -226,11 +231,13 @@ footer a {
 
 .best-offers-top,
 .work-gallery-top,
-.client-gallery-top {
+.client-gallery-top,
+.available-flowers-top {
   margin-bottom: 20px;
 }
 
-.best-offers-top h2 {
+.best-offers-top h2,
+.available-flowers-top h2 {
   color: #555;
   font-weight: bold;
 }
@@ -260,7 +267,8 @@ footer a {
   color: #999;
 }
 
-.best-product-top {
+.best-product-top,
+.available-flower-top {
   margin: 20px auto;
 }
 
@@ -274,12 +282,14 @@ footer a {
   padding: 7px;
 }
 
-.best-product {
+.best-product,
+.available-flower {
   background-color: rgb(252, 252, 252);
   padding: 10px;
 }
 
-.best-offers-grid {
+.best-offers-grid,
+.available-flowers-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -334,6 +344,10 @@ footer a {
 
 .product-options {
   margin: 10px auto;
+}
+
+.available-flowers .secondary {
+  display: none;
 }
 
 .see-more {
@@ -428,6 +442,10 @@ footer a {
     align-items: center;
   }
 
+  .available-flowers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .best-main {
     grid-row: span 2;
   }
@@ -472,6 +490,35 @@ footer a {
 
   .customer-two .customer-pic {
     background-image: url('../img/customer2.jpg');
+  }
+
+  .available-flowers .secondary {
+    display: block;
+  }
+
+  .available-flower {
+    position: relative;
+  }
+
+  .available-flower[data-available='yes']::after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/heart\ \(1\).svg') ;
+  }
+
+  .available-flower[data-available='no']::after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/heart.svg') ;
+    fill: red;
   }
 
   .testimonials {
