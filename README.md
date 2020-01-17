@@ -11,10 +11,20 @@ Final live version :
 
 ## About the project
 
+This Solo Project was about building a flower shop with the given UI as specified [here](https://www.notion.so/HTML-CSS-capstone-project-Flower-shop-36dadb9944f040618db0de47cd6f68d6).
 
+Here is my version of the project : 
+
+![image](https://imgur.com/GNjYO95)
 
 ## Features
 
+* Pure css
+* Used grids and flexbox
+* Used product details from external source
+* Designed as per designer instructions
+* Used similar fonts as font wasn't provided beforehand
+* Responsive design
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
