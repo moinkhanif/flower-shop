@@ -9,9 +9,8 @@
   /* border: 1px red solid; */
 }
 
-
 body {
-  background: radial-gradient(circle at 378% -4%, #72C92A 40%, transparent 40% ,transparent 90%),#62C312;
+  background: radial-gradient(circle at 378% -4%, #72c92a 40%, transparent 40%, transparent 90%), #62c312;
   background-size: cover;
   background-repeat: repeat-y;
   background-position: bottom;
@@ -101,13 +100,13 @@ header .icon-li a {
   padding: 5px;
   position: relative;
 }
+
 header ul .heart-li a {
   background-color: rgba(255, 255, 255, 0.384);
 }
 
-
 header .icon-li:last-child a {
-  background-color: rgb(216,5,90);
+  background-color: rgb(216, 5, 90);
 }
 
 header .icon-li:last-child a::after {
@@ -123,6 +122,12 @@ header .icon-li:last-child a::after {
   border-radius: 50%;
   background-color: #fff;
   color: #999;
+}
+
+.top-cover {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .top-cover > div > * {
@@ -145,14 +150,14 @@ header .icon-li:last-child a::after {
 }
 
 .cover-button {
-  background-color: rgb(216,5,90);
+  background-color: rgb(216, 5, 90);
   padding: 10px 20px;
   margin-top: 40px;
 }
 
 .footer-subscribe {
   padding: 10px 20%;
-  background-color: #55BF00;
+  background-color: #55bf00;
 }
 
 .cover-img img {
@@ -166,6 +171,7 @@ header .icon-li:last-child a::after {
   max-width: 100%;
   overflow: hidden;
 }
+
 .google-maps iframe {
   position: absolute;
   top: 0;
@@ -211,14 +217,16 @@ footer a {
 
 .best-offers-top,
 .best-product-top,
-.work-gallery-top {
+.work-gallery-top,
+.client-gallery-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .best-offers-top,
-.work-gallery-top {
+.work-gallery-top,
+.client-gallery-top {
   margin-bottom: 20px;
 }
 
@@ -257,7 +265,7 @@ footer a {
 }
 
 .best-product-top span {
-  background-color: #62C312;
+  background-color: #62c312;
   color: white;
   border-radius: 50%;
   display: inline-block;
@@ -267,7 +275,7 @@ footer a {
 }
 
 .best-product {
-  background-color: rgb(252,252,252);
+  background-color: rgb(252, 252, 252);
   padding: 10px;
 }
 
@@ -315,7 +323,7 @@ footer a {
 .product-options li {
   margin-right: 20px;
   padding: 2px 10px;
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   border-radius: 50px;
 }
 
@@ -331,7 +339,7 @@ footer a {
 .see-more {
   display: block;
   padding: 10px 15px;
-  background-color: rgb(216,5,90);
+  background-color: rgb(216, 5, 90);
   max-width: 50%;
   margin: auto;
   text-align: center;
@@ -341,16 +349,22 @@ footer a {
 
 .customer-details {
   display: flex;
-
 }
 
 .customer-pic {
   min-height: 100px;
   min-width: 100px;
   border-radius: 50%;
-  background-image: url('../img/customer1.jpg');
   background-size: cover;
   margin-right: 20px;
+}
+
+.customer-one .customer-pic {
+  background-image: url('../img/customer1.jpg');
+}
+
+.customer-two {
+  display: none;
 }
 
 .testimonials > div {
@@ -359,17 +373,24 @@ footer a {
 
 .customer-social {
   display: flex;
+  margin-top: 10px;
 }
 
 .customer-social img {
   height: 20px;
   width: 20px;
+  margin: auto 5px;
+}
+
+.testimony {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 306px) {
   .new-section {
     padding: 5px;
   }
+
   header .icon-li a {
     padding: 1px;
   }
@@ -390,3 +411,73 @@ footer a {
   }
 }
 
+@media screen and (min-width: 774px) {
+  .top-cover {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .top-cover-text {
+    padding-left: 30%;
+  }
+
+  .best-offers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .best-main {
+    grid-row: span 2;
+  }
+
+  .best-product > a {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .best-product {
+    height: 100%;
+  }
+
+  .best-product img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .best-main > a {
+    display: block;
+  }
+
+  .best-product > a > div:last-child {
+    width: 60%;
+    height: 100%;
+  }
+
+  .best-main > a > div:last-child {
+    width: 100%;
+    height: auto;
+  }
+
+  .best-main img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .customer-two {
+    display: block;
+  }
+
+  .customer-two .customer-pic {
+    background-image: url('../img/customer2.jpg');
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
+  }
+}
