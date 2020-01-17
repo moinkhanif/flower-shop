@@ -6,8 +6,7 @@
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-I was to create:
-Final live version : 
+Final live version : [here](https://cdn.statically.io/gh/moinkhanif/flower-shop/flower-shop/flower.html)
 
 ## About the project
 
@@ -15,7 +14,7 @@ This Solo Project was about building a flower shop with the given UI as specifie
 
 Here is my version of the project : 
 
-![image](https://imgur.com/GNjYO95)
+![image](https://i.imgur.com/GNjYO95.png)
 
 ## Features
 
