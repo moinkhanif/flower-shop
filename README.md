@@ -6,15 +6,14 @@
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Final live version : [here](https://cdn.statically.io/gh/moinkhanif/flower-shop/flower-shop/flower.html)
-
 ## About the project
 
-This Solo Project was about building a flower shop with the given UI as specified [here](https://www.notion.so/HTML-CSS-capstone-project-Flower-shop-36dadb9944f040618db0de47cd6f68d6).
+This Solo Project was about building a flower shop with the given UI as specified [here](https://www.notion.so/HTML-CSS-capstone-project-Flower-shop-36dadb9944f040618db0de47cd6f68d6). I used the mobile-first approach for this website and made my way through the big screens using media queries.
 
-Here is my version of the project : 
+## Live Version
 
-![image](https://i.imgur.com/GNjYO95.png)
+Final live version : [here](https://cdn.statically.io/gh/moinkhanif/flower-shop/flower-shop/flower.html)
+
 
 ## Features
 
@@ -23,7 +22,30 @@ Here is my version of the project :
 * Used product details from external source
 * Designed as per designer instructions
 * Used similar fonts as font wasn't provided beforehand
-* Responsive design
+* Responsive design using media queries
+
+## Technologies Used
+
+* HTML/CSS
+* Flexbox
+* CSS Grids
+
+## Credits 
+
+* I'd like to thank [Michael D](https://www.behance.net/altezzik) for a great [UI design](https://www.behance.net/gallery/69329213/Flower-e-shop).
+* Image Credits:
+    * Kara's Party Idea's for [Unicorn party](https://karaspartyideas.com/category/kids-parties/girl-parties/unicorn)
+    * Glamour La Fleur - A Passionate Singaporean Florist's [Unicorn Collection](https://glamourlafleur.com/search?q=unicorn)
+    * DIY Unicorn Flower Boxes by [hellowonderful.co](https://www.hellowonderful.co/post/diy-unicorn-flower-box-planter/)
+    * [E&e Flowers](https://www.eandeflowers.com/product/5b80554d46a22/unicorn-fantasy-floral-arrangement)
+
+## Looks and Design
+
+Here is my version of the project : 
+
+![image](https://i.imgur.com/GNjYO95.png)
+
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
