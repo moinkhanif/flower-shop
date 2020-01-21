@@ -13,10 +13,10 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-  <title>Catalog -UniFlower - A Flower Shop for your Unicorn needs</title>
+  <title>UniFlower - A Flower Shop for your Unicorn needs</title>
 </head>
 
 <body>
@@ -28,38 +28,40 @@
           <h1>UniFlower</h1>
         </a>
       </div>
-      <ul>
-        <li class="main-li"><a href="/">
-            Home
-          </a></li>
-        <li class="main-li"><a href="./catalog.html">
-            Browse Catalog
-          </a></li>
-        <li class="icon-li heart-li burger"><a href="#">
-            &#9776;
-          </a></li>
-        <li class="icon-li heart-li"><a href="#">
-            &#10084;
-          </a></li>
-        <li class="icon-li"><a href="#" data-cart="0">
-            <svg class="cart-icon" height="512pt" viewBox="0 -31 512.00033 512" width="512pt"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="m166 300.003906h271.003906c6.710938 0 12.597656-4.4375 14.414063-10.882812l60.003906-210.003906c1.289063-4.527344.40625-9.390626-2.433594-13.152344-2.84375-3.75-7.265625-5.964844-11.984375-5.964844h-365.632812l-10.722656-48.25c-1.523438-6.871094-7.617188-11.75-14.648438-11.75h-91c-8.289062 0-15 6.710938-15 15 0 8.292969 6.710938 15 15 15h78.960938l54.167968 243.75c-15.9375 6.929688-27.128906 22.792969-27.128906 41.253906 0 24.8125 20.1875 45 45 45h271.003906c8.292969 0 15-6.707031 15-15 0-8.289062-6.707031-15-15-15h-271.003906c-8.261719 0-15-6.722656-15-15s6.738281-15 15-15zm0 0" />
-              <path
-                d="m151 405.003906c0 24.816406 20.1875 45 45.003906 45 24.8125 0 45-20.183594 45-45 0-24.8125-20.1875-45-45-45-24.816406 0-45.003906 20.1875-45.003906 45zm0 0" />
-              <path
-                d="m362.003906 405.003906c0 24.816406 20.1875 45 45 45 24.816406 0 45-20.183594 45-45 0-24.8125-20.183594-45-45-45-24.8125 0-45 20.1875-45 45zm0 0" />
-            </svg>
-          </a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li class="main-li"><a href="/">
+              Home
+            </a></li>
+          <li class="main-li"><a href="./catalog.html">
+              Browse Catalog
+            </a></li>
+          <li class="icon-li heart-li burger"><a href="#">
+              &#9776;
+            </a></li>
+          <li class="icon-li heart-li"><a href="#">
+              &#10084;
+            </a></li>
+          <li class="icon-li"><a href="#" data-cart="0">
+              <svg class="cart-icon" height="512pt" viewBox="0 -31 512.00033 512" width="512pt"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m166 300.003906h271.003906c6.710938 0 12.597656-4.4375 14.414063-10.882812l60.003906-210.003906c1.289063-4.527344.40625-9.390626-2.433594-13.152344-2.84375-3.75-7.265625-5.964844-11.984375-5.964844h-365.632812l-10.722656-48.25c-1.523438-6.871094-7.617188-11.75-14.648438-11.75h-91c-8.289062 0-15 6.710938-15 15 0 8.292969 6.710938 15 15 15h78.960938l54.167968 243.75c-15.9375 6.929688-27.128906 22.792969-27.128906 41.253906 0 24.8125 20.1875 45 45 45h271.003906c8.292969 0 15-6.707031 15-15 0-8.289062-6.707031-15-15-15h-271.003906c-8.261719 0-15-6.722656-15-15s6.738281-15 15-15zm0 0" />
+                <path
+                  d="m151 405.003906c0 24.816406 20.1875 45 45.003906 45 24.8125 0 45-20.183594 45-45 0-24.8125-20.1875-45-45-45-24.816406 0-45.003906 20.1875-45.003906 45zm0 0" />
+                <path
+                  d="m362.003906 405.003906c0 24.816406 20.1875 45 45 45 24.816406 0 45-20.183594 45-45 0-24.8125-20.183594-45-45-45-24.8125 0-45 20.1875-45 45zm0 0" />
+              </svg>
+            </a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main>
-    <div class="w-100 section-white">
+    <section class="w-100 section-white">
       <h2 style="padding: 30px 10px;">Available Flowers</h2>
       <div class="catalog-grid">
-        <div class="filters">
+        <aside class="filters">
           <h3><span><img src="./img/filter.svg" alt="" class="filter-img"></span> Filters</h3>
           <div>
             <div class="slidecontainer">
@@ -110,7 +112,7 @@
               </label>
             </div>
           </div>
-        </div>
+        </aside>
         <div class="available-flowers w-100 new-section section-white">
           <div class="available-flowers-top">  
           </div>
@@ -226,8 +228,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="client-gallery new-section">
+    </section>
+    <section class="client-gallery new-section">
       <div class="client-gallery-top">
         <h2>Clients Love Us</h2>
         <div>
@@ -276,18 +278,20 @@
         <span></span>
         <span></span>
       </div>
-    </div>
-    <div class="google-maps">
+    </section>
+    <section class="google-maps">
+      <h2 class="d-none">Google Maps</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2474.722900280973!2d126.90609738908823!3d37.547827988305706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6058954f87325221!2sYG%20Entertainment!5e0!3m2!1sen!2sus!4v1579120722274!5m2!1sen!2sus"
         width="600" height="450" style="border: 0;" allowfullscreen=""></iframe>
-    </div>
+    </section>
   </main>
   <footer class="section-white">
-    <div>
-      <button class="footer-subscribe">Subscribe for Discounts</button>
-    </div>
+    
     <div class="footer-bottom">
+      <div class="footer-subs-div">
+        <button class="footer-subscribe">Subscribe for Discounts</button>
+      </div>
       <div>
         <p>
           3 Huiujeong-ro 1-gil, Mapo-gu, Seoul
@@ -297,19 +301,19 @@
           Hapjeong Station (subway lines 2, 6) exit 6
         </p>
       </div>
-      <div>
+      <nav>
         <ul>
           <li><a href="#">Shipping and Returns</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Promotions and Discounts</a></li>
         </ul>
-      </div>
+      </nav>
       <div>
         <p>
           2020 &copy; UniFlower , All rights not reserved
         </p>
         <img
-          src="https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/IN/logo-center/logo-center-solution-graphics.png"
+          src="./img/rsz_logo-center-solution-graphics.png"
           alt="PayPal Acceptance Mark">
       </div>
     </div>

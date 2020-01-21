@@ -30,6 +30,10 @@ span {
   font-family: 'Hind Vadodara', sans-serif;
 }
 
+.d-none {
+  display: none;
+}
+
 body > main > *,
 header {
   padding: 0 10px;
@@ -460,6 +464,7 @@ footer {
 .best-product-top,
 .available-flower-top {
   margin: 20px auto;
+  margin-left: 10px;
 }
 
 .discounted span,
@@ -591,6 +596,11 @@ footer {
 
 .customer-one .customer-pic {
   background-image: url('../img/customer1.jpg');
+}
+
+.customer-one,
+.customer-two {
+  border-radius: 5px;
 }
 
 .customer-two {
