@@ -98,6 +98,10 @@ header > div {
   margin: 40px 0;
 }
 
+.product-options a {
+  color: #555;
+}
+
 footer li {
   list-style: none;
 }
