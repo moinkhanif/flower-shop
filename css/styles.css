@@ -20,7 +20,8 @@ h4,
 h5,
 h6 {
   color: #fff;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Baskervville', serif;
+  font-weight: 700;
 }
 
 p,
@@ -283,8 +284,13 @@ footer span {
 }
 
 .footer-subscribe {
-  padding: 10px 20%;
+  padding: 10px 21%;
   background-color: #55bf00;
+}
+
+.footer-subs-div {
+  flex-basis: 30%;
+  margin-bottom: 5%;
 }
 
 .cover-img img {
@@ -353,7 +359,7 @@ footer {
   display: block;
   padding: 10px 15px;
   background-color: rgb(216, 5, 90);
-  max-width: 50%;
+  max-width: 80%;
   margin: auto;
   text-align: center;
   color: #fff;
@@ -426,6 +432,7 @@ footer {
 .best-product-top,
 .available-flower-top {
   margin: 20px auto;
+  text-align: start;
 }
 
 .best-product-top span,
@@ -493,6 +500,7 @@ footer {
   height: 20px;
   width: 20px;
   background-image: url('../img/heart\ \(1\).svg');
+  cursor: pointer;
 }
 
 .available-flower[data-available='no']::after {
@@ -504,6 +512,7 @@ footer {
   width: 20px;
   background-image: url('../img/heart.svg');
   fill: red;
+  cursor: pointer;
 }
 
 .product-options ul {
@@ -602,6 +611,20 @@ footer {
 
   .top-cover-text {
     padding-left: 30%;
+  }
+
+  .top-cover-text h2,
+  .top-cover-text p {
+    margin-right: -50%;
+    text-align: left;
+  }
+
+  .top-cover-text .see-more {
+    margin: 0;
+  }
+
+  .cover-img {
+    z-index: -10;
   }
 
   .best-offers-grid {
@@ -737,6 +760,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .top-cover-text h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    margin-right: -80%;
   }
 }
