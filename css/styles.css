@@ -388,7 +388,6 @@ footer {
 .available-flowers-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .best-offers-top,
@@ -432,7 +431,6 @@ footer {
 .best-product-top,
 .available-flower-top {
   margin: 20px auto;
-  text-align: start;
 }
 
 .best-product-top span,
