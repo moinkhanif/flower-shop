@@ -433,7 +433,7 @@ footer {
   margin: 20px auto;
 }
 
-.best-product-top span,
+.discounted span,
 .flower-product-title span {
   background-color: #62c312;
   color: white;
@@ -528,12 +528,22 @@ footer {
   display: none;
 }
 
-.price {
+.price span {
   position: relative;
 }
 
-.price::after {
+.price span::after {
   content: '';
+  position: absolute;
+  right: -25px;
+  height: 19px;
+  width: 19px;
+  background-image: url('../img/cart-sm.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  cursor: pointer;
 }
 
 .customer-details {
