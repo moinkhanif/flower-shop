@@ -127,16 +127,25 @@ header ul .heart-li a {
   background-color: rgba(255, 255, 255, 0.384);
 }
 
-.color-selector {
+.flower-product-image {
+  position: relative;
+}
+
+.color-selector,
+.color-delivery .delivery-options {
   display: flex;
   flex-flow: row;
 }
 
-.color-selector > li {
-  padding: 10px;
+.color-selector > li,
+.color-delivery .delivery-options {
+  padding: 5px;
   border-radius: 50%;
-  margin: 5%;
-  width: 20px;
+  margin: 20px 10px;
+}
+
+.delivery-options label {
+  margin-right: 30px;
 }
 
 header .icon-li:last-child a {
@@ -367,10 +376,21 @@ footer {
   margin: 40px 10px;
 }
 
-.flower-product-price {
-  margin: 40px 10px;
+.flower-product-details .color-delivery {
   display: flex;
+  flex-direction: column;
+}
+
+.flower-product-price {
+  margin: 20px 10px;
+  display: flex;
+  flex-flow: row wrap;
   align-items: center;
+}
+
+.flower-product-price > span {
+  text-decoration: line-through;
+  margin-right: 8px;
 }
 
 .see-more {
@@ -396,6 +416,13 @@ footer {
   margin-top: 20px;
 }
 
+.flower-product-image .scrollables {
+  flex-direction: column;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
 .flower-product-price .see-more {
   margin-left: 20px;
 }
@@ -408,7 +435,7 @@ footer {
 }
 
 .flower-product-details .color-selector li {
-  padding: 20px;
+  padding: 13px;
 }
 
 .best-offers-top,
@@ -479,7 +506,8 @@ footer {
 }
 
 .best-product,
-.available-flower {
+.available-flower,
+.flower-product-image {
   background-color: rgb(252, 252, 252);
   padding: 10px;
   border-radius: 10px;
@@ -560,6 +588,10 @@ footer {
   background-color: #fff;
 }
 
+.flower-product-details .product-options ul {
+  margin-top: 20px;
+}
+
 .available-flowers .secondary {
   display: none;
 }
@@ -580,6 +612,11 @@ footer {
   background-repeat: no-repeat;
   bottom: 0;
   cursor: pointer;
+}
+
+.flower-product-image .scrollables span {
+  background-color: rgba(126, 208, 18, 0.8);
+  margin: 2px auto;
 }
 
 .customer-details {
@@ -611,6 +648,10 @@ footer {
   padding: 20px;
 }
 
+.flower-product-details .color-delivery > div {
+  margin-right: 20px;
+}
+
 .customer-social {
   display: flex;
   margin-top: 10px;
@@ -624,6 +665,14 @@ footer {
 
 .scrollables span:first-child {
   background-color: #fff;
+}
+
+.flower-product-image > div:last-child span {
+  margin-right: 10px;
+}
+
+.flower-product-image .scrollables span:first-child {
+  background-color: rgb(137, 226, 20);
 }
 
 .testimony {
@@ -794,6 +843,18 @@ footer {
     display: block;
   }
 
+  .flower-product-image,
+  .flower-product-image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .flower-product-image img {
+    display: block;
+    margin: auto;
+    width: auto;
+  }
+
   .slidecontainer > p {
     margin-bottom: 20px;
   }
@@ -808,6 +869,10 @@ footer {
   .top-cover-text h2 {
     font-size: 2.8rem;
     margin-right: -80%;
+  }
+
+  .flower-product-details .color-delivery {
+    flex-direction: row;
   }
 
   .footer-bottom {
