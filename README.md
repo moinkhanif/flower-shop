@@ -45,7 +45,12 @@ Here is my version of the project :
 
 ![image](https://i.imgur.com/GNjYO95.png)
 
+## Contributors
 
+* Moin Khan
+    * Twitter: [@MoinKhanIF](https://twitter.com/MoinKhanIF)
+    * LinkedIn : [@MoinKhanIF](https://www.linkedin.com/in/moinkhanif/)
+    * Personal Website: [MoinKhan.Info](https://moinkhan.info)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
