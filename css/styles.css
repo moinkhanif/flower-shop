@@ -286,11 +286,25 @@ footer span {
 .footer-subscribe {
   padding: 10px 21%;
   background-color: #55bf00;
+  position: relative;
+}
+
+.footer-subscribe::after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 17px;
+  top: 25%;
+  background-image: url('../img/envelope.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .footer-subs-div {
   flex-basis: 30%;
-  margin-bottom: 5%;
+  margin-bottom: 5% !important;
 }
 
 .cover-img img {
@@ -360,10 +374,22 @@ footer {
   padding: 10px 15px;
   background-color: rgb(216, 5, 90);
   max-width: 80%;
-  margin: auto;
+  margin: 12px auto;
   text-align: center;
   color: #fff;
   border-radius: 50px;
+}
+
+.scrollables span {
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.699);
+}
+
+.scrollables {
+  display: flex;
+  margin-top: 20px;
 }
 
 .flower-product-price .see-more {
@@ -417,11 +443,14 @@ footer {
 .section-white p,
 .section-white span {
   color: #777;
+  cursor: pointer;
 }
 
 .best-offers-top span,
-.work-gallery-top span {
+.work-gallery-top span,
+.client-gallery-top span {
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .best-offers-top span {
@@ -448,6 +477,8 @@ footer {
 .available-flower {
   background-color: rgb(252, 252, 252);
   padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(238, 238, 238);
 }
 
 .best-offers-grid,
@@ -579,6 +610,10 @@ footer {
   height: 20px;
   width: 20px;
   margin: auto 5px;
+}
+
+.scrollables span:first-child {
+  background-color: #fff;
 }
 
 .testimony {
@@ -719,13 +754,6 @@ footer {
     grid-gap: 50px;
   }
 
-  .footer-bottom {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
   .flower-product {
     grid-template-columns: 1fr 1fr;
   }
@@ -770,5 +798,16 @@ footer {
   .top-cover-text h2 {
     font-size: 2.8rem;
     margin-right: -80%;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-subs-div {
+    margin-right: 10%;
   }
 }
