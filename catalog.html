@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>UniFlower - A Flower Shop for your Unicorn needs</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <div class="logo">
+        <a href="/">
+          <img src="./img/logo.png" alt="Logo">
+          <h1>UniFlower</h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li class="main-li"><a href="/">
+              Home
+            </a></li>
+          <li class="main-li"><a href="./catalog.html">
+              Browse Catalog
+            </a></li>
+          <li class="icon-li heart-li burger"><a href="#">
+              &#9776;
+            </a></li>
+          <li class="icon-li heart-li"><a href="#">
+              &#10084;
+            </a></li>
+          <li class="icon-li"><a href="#" data-cart="0">
+              <svg class="cart-icon" height="512pt" viewBox="0 -31 512.00033 512" width="512pt"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m166 300.003906h271.003906c6.710938 0 12.597656-4.4375 14.414063-10.882812l60.003906-210.003906c1.289063-4.527344.40625-9.390626-2.433594-13.152344-2.84375-3.75-7.265625-5.964844-11.984375-5.964844h-365.632812l-10.722656-48.25c-1.523438-6.871094-7.617188-11.75-14.648438-11.75h-91c-8.289062 0-15 6.710938-15 15 0 8.292969 6.710938 15 15 15h78.960938l54.167968 243.75c-15.9375 6.929688-27.128906 22.792969-27.128906 41.253906 0 24.8125 20.1875 45 45 45h271.003906c8.292969 0 15-6.707031 15-15 0-8.289062-6.707031-15-15-15h-271.003906c-8.261719 0-15-6.722656-15-15s6.738281-15 15-15zm0 0" />
+                <path
+                  d="m151 405.003906c0 24.816406 20.1875 45 45.003906 45 24.8125 0 45-20.183594 45-45 0-24.8125-20.1875-45-45-45-24.816406 0-45.003906 20.1875-45.003906 45zm0 0" />
+                <path
+                  d="m362.003906 405.003906c0 24.816406 20.1875 45 45 45 24.816406 0 45-20.183594 45-45 0-24.8125-20.183594-45-45-45-24.8125 0-45 20.1875-45 45zm0 0" />
+              </svg>
+            </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="w-100 section-white">
+      <h2 style="padding: 30px 10px;">Available Flowers</h2>
+      <div class="catalog-grid">
+        <aside class="filters">
+          <h3><span><img src="./img/filter.svg" alt="" class="filter-img"></span> Filters</h3>
+          <div>
+            <div class="slidecontainer">
+              <p>Price Range</p>
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              <div>
+                <span><input type="number" name="min-price" id="min-price" value="100"></span>
+                <span><input type="number" name="max-price" id="max-price" value="900"></span>
+              </div>
+            </div>
+            <div>
+              <h4>Color:</h4>
+              <ul class="color-selector">
+                <li class="purple"></li>
+                <li class="green"></li>
+                <li class="yellow"></li>
+                <li class="red"></li>
+              </ul>
+            </div>
+            <div class="filter-event">
+              <h4>Event type</h4>
+              <label for="event1">
+                <input type="checkbox" name="event1" id="event1">Birthday
+              </label>
+              <label for="event2">
+                <input type="checkbox" name="event2" id="event2">Wedding
+              </label>
+              <label for="event3">
+                <input type="checkbox" name="event3" id="event3">Party
+              </label>
+              <label for="event4">
+                <input type="checkbox" name="event4" id="event4">Class
+              </label>
+            </div>
+            <div class="filter-occation">
+              <h4>Event type</h4>
+              <label for="occation1">
+                <input type="checkbox" name="occation1" id="occation1">Teachers
+              </label>
+              <label for="occation2">
+                <input type="checkbox" name="occation2" id="occation2">Friend
+              </label>
+              <label for="occation3">
+                <input type="checkbox" name="occation3" id="occation3">Family
+              </label>
+              <label for="occation4">
+                <input type="checkbox" name="occation4" id="occation4">Union
+              </label>
+            </div>
+          </div>
+        </aside>
+        <div class="available-flowers w-100 new-section section-white">
+          <div class="available-flowers-top">
+          </div>
+          <div class="available-flowers-grid section-white">
+            <div class="available-flower" data-available='yes'>
+              <div>
+                <img src="./img/pink_preserved_unicorn_flowers_1512x.jpg" alt="Pink Preserved">
+              </div>
+              <div class="available-flower-top">
+                <div>
+                  <h3>Pink Preserved</h3>
+                  <div class="product-options">
+                    <ul>
+                      <li class="selected"><a href="./flower.html">9ut</a></li>
+                      <li><a href="./flower.html">15ut</a></li>
+                      <li><a href="./flower.html">21ut</a></li>
+                    </ul>
+                  </div>
+                  <p class="price"><span>$41.69</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="available-flower" data-available='no'>
+              <div>
+                <img src="./img/167537alt_viewx-600x600.jpg" alt="Pink Preserved">
+              </div>
+              <div class="available-flower-top">
+                <div>
+                  <h3>Purpliflorn</h3>
+                  <div class="product-options">
+                    <ul>
+                      <li class="selected"><a href="./flower.html">9ut</a></li>
+                      <li><a href="./flower.html">15ut</a></li>
+                      <li><a href="./flower.html">21ut</a></li>
+                    </ul>
+                  </div>
+                  <p class="price"><span>$41.69</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="available-flower" data-available='yes'>
+              <div>
+                <img src="./img/20180123143114-02_61d2466d-956a-4409-b12a-1f81ca1ab725_1512x.jpg" alt="Unicorn Flower">
+              </div>
+              <div class="available-flower-top">
+                <div>
+                  <h3>Unicorn Flowers</h3>
+                  <div class="product-options">
+                    <ul>
+                      <li class="selected"><a href="./flower.html">9ut</a></li>
+                      <li><a href="./flower.html">15ut</a></li>
+                      <li><a href="./flower.html">21ut</a></li>
+                    </ul>
+                  </div>
+                  <p class="price"><span>$41.69</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="available-flower" data-available='yes'>
+              <div>
+                <img src="./img/23-2.jpg" alt="Pink Preserved">
+              </div>
+              <div class="available-flower-top">
+                <div>
+                  <h3>Pink Preserved</h3>
+                  <div class="product-options">
+                    <ul>
+                      <li class="selected"><a href="./flower.html">9ut</a></li>
+                      <li><a href="./flower.html">15ut</a></li>
+                      <li><a href="./flower.html">21ut</a></li>
+                    </ul>
+                  </div>
+                  <p class="price"><span>$41.69</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="available-flower" data-available='no'>
+              <div>
+                <img src="./img/2018-05-03_0003.jpg" alt="Pink Preserved">
+              </div>
+              <div class="available-flower-top">
+                <div>
+                  <h3>Purpliflorn</h3>
+                  <div class="product-options">
+                    <ul>
+                      <li class="selected"><a href="./flower.html">9ut</a></li>
+                      <li><a href="./flower.html">15ut</a></li>
+                      <li><a href="./flower.html">21ut</a></li>
+                    </ul>
+                  </div>
+                  <p class="price"><span>$41.69</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="available-flower" data-available='yes'>
+              <div>
+                <img src="./img/unicorn-fantasy-floral-arrangement-5b80554d46a22.425.jpg" alt="Unicorn Flower">
+              </div>
+              <div class="available-flower-top">
+                <div>
+                  <h3>Unicorn Flowers</h3>
+                  <div class="product-options">
+                    <ul>
+                      <li class="selected"><a href="./flower.html">9ut</a></li>
+                      <li><a href="./flower.html">15ut</a></li>
+                      <li><a href="./flower.html">21ut</a></li>
+                    </ul>
+                  </div>
+                  <p class="price"><span>$41.69</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="client-gallery new-section">
+      <div class="client-gallery-top">
+        <h2>Clients Love Us</h2>
+        <div>
+          <span>
+            &#10094;
+          </span>
+          <span>
+            &#10095;
+          </span>
+        </div>
+      </div>
+      <div class="testimonials ">
+        <div class="customer-one section-white">
+          <div class="customer-details">
+            <div class="customer-pic"></div>
+            <div>
+              <h4>Katherine</h4>
+              <p>Customer since 2014</p>
+              <ul class="customer-social">
+                <li><a href="#"><img src="./img/vk.svg" alt="VK logo"></a></li>
+                <li><a href="#"><img src="./img/facebook.svg" alt="facebook logo"></a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="testimony">"I would gladly pay over 600 dollars for UniFlower. I am so pleased with this product.
+            The service was excellent."</p>
+        </div>
+        <div class="customer-two section-white">
+          <div class="customer-details">
+            <div class="customer-pic"></div>
+            <div>
+              <h4>Nikki</h4>
+              <p>Customer since 2018</p>
+              <ul class="customer-social">
+                <li><a href="#"><img src="./img/vk.svg" alt="VK logo"></a></li>
+                <li><a href="#"><img src="./img/facebook.svg" alt="facebook logo"></a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="testimony">"I would gladly pay over 600 dollars for UniFlower. I am so pleased with this product.
+            The service was excellent."</p>
+        </div>
+      </div>
+      <div class="scrollables">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+    <section class="google-maps">
+      <h2 class="d-none">Google Maps</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2474.722900280973!2d126.90609738908823!3d37.547827988305706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6058954f87325221!2sYG%20Entertainment!5e0!3m2!1sen!2sus!4v1579120722274!5m2!1sen!2sus"
+        width="600" height="450" style="border: 0;" allowfullscreen=""></iframe>
+    </section>
+  </main>
+  <footer class="section-white">
+
+    <div class="footer-bottom">
+      <div class="footer-subs-div">
+        <button class="footer-subscribe">Subscribe for Discounts</button>
+      </div>
+      <div>
+        <p>
+          3 Huiujeong-ro 1-gil, Mapo-gu, Seoul
+          <br>
+          <b>Subway:</b>
+          <br>
+          Hapjeong Station (subway lines 2, 6) exit 6
+        </p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Shipping and Returns</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Promotions and Discounts</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p>
+          2020 &copy; UniFlower , All rights not reserved
+        </p>
+        <img src="./img/rsz_logo-center-solution-graphics.png" alt="PayPal Acceptance Mark">
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
