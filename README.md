@@ -12,16 +12,16 @@ This Solo Project was about building a flower shop with the given UI as specifie
 
 ## Live Version
 
-Final live version : [here](https://cdn.statically.io/gh/moinkhanif/flower-shop/flower-shop/flower.html)
+Final live version : [here](https://moinkhanif.dev/flower-shop/)
 
 
 ## Features
 
-* Pure css
+* Pure CSS
 * Used grids and flexbox
-* Used product details from external source
+* Used product details from an external source
 * Designed as per designer instructions
-* Used similar fonts as font wasn't provided beforehand
+* Used similar fonts as the font wasn't provided beforehand
 * Responsive design using media queries
 
 ## Technologies Used
@@ -32,7 +32,7 @@ Final live version : [here](https://cdn.statically.io/gh/moinkhanif/flower-shop/
 
 ## Credits 
 
-* I'd like to thank [Michael D](https://www.behance.net/altezzik) for a great [UI design](https://www.behance.net/gallery/69329213/Flower-e-shop).
+* I'd like to thank [Michael D](https://www.behance.net/altezzik) for a great [UI Design](https://www.behance.net/gallery/69329213/Flower-e-shop).
 * Image Credits:
     * Kara's Party Idea's for [Unicorn party](https://karaspartyideas.com/category/kids-parties/girl-parties/unicorn)
     * Glamour La Fleur - A Passionate Singaporean Florist's [Unicorn Collection](https://glamourlafleur.com/search?q=unicorn)
@@ -50,7 +50,7 @@ Here is my version of the project :
 * Moin Khan
     * Twitter: [@MoinKhanIF](https://twitter.com/MoinKhanIF)
     * LinkedIn : [@MoinKhanIF](https://www.linkedin.com/in/moinkhanif/)
-    * Personal Website: [MoinKhan.Info](https://moinkhan.info)
+    * Personal Website: [MoinKhanIF.dev](https://moinkhanif.dev)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
